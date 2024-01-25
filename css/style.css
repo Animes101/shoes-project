@@ -39,6 +39,11 @@ img{
 #header{
     padding:10px 0;
     border-bottom: 1px solid var(--text-color);
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 10;
+    background:var(--white-color)
 }
 .nav-area{
     display: flex;
@@ -302,6 +307,12 @@ img{
     box-shadow: 2px 2px 3px var(--gray-color);
     border:1px solid red;
     padding:10px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.review-card:hover{
+    transform: rotate(1deg);
 }
 .rating{
     display: flex;
@@ -333,4 +344,176 @@ img{
 .servises-area p{
     font-size: 16px;
     color:var(--gray-color)
+}
+
+/*our services area style start*/
+.services-area h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+.services-area hr{
+    border-bottom: 2px dashed var(--gray-color);
+
+}
+.services-cards{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.service-card{
+    width:25%;
+    border:1px solid red;
+    padding:5px;
+}
+.service-card span{
+    font-size:40px;
+    color:var(--gradient-color)
+
+}
+.service-card  h2{
+    font-size:25px;
+    font-weight: 700;
+
+}
+.service-card p{
+    font-size: 16px;
+    font-weight: 400px;
+}
+.service-content{
+    display: flex;
+    align-items: center;
+    background-image: url('/image/loging_bg.png');
+    background-position: center;
+    background-size: cover;
+
+}
+.service-img{
+    width:50%;
+}
+.account-area{
+    width:50%;
+}
+.account-area form{
+    width:90%;
+    margin:auto;
+
+}
+.account-area form h2{
+    font-size:20px;
+    text-align: center;
+    font-weight: 600;
+
+}
+.account-area form label{
+    font-size:18px;
+    font-weight: 400;
+}
+.account-area form input{
+    display: block;
+    padding:5px;
+    width:100%;
+    font-size:16px;
+    border-radius: 5px;
+    background:transparent;
+    margin:10px 0;
+
+}
+.account-area form a{
+    display: block;
+    text-align: end;
+    font-size:16px;
+    padding:5px 0;
+}
+.account-area form button{
+    width:100%;
+    font-size:16px;
+    background:var(--gradient-color);
+    border-radius: 5px;
+    padding:10px 0;
+    cursor: pointer;
+}
+.account-area form ul{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+.account-area form ul li a img{
+    width:30%;
+    background:var(--white-color);
+    box-shadow: 3px 3px 3px black;
+    border-radius: 50%;
+    padding:5px;
+}
+
+/*footer area style start*/
+#footer{
+    background-color: gray;
+    padding:20px 0;
+    
+}
+
+.footer-area{
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+}
+.footer-area h1{
+    font-size:18px;
+    font-weight: 600;
+    margin:0;
+
+}
+.footer-area ul{
+    padding: 0;
+}
+.footer-area div ul li{
+    font-size:14px;
+    padding:5px 0;
+
+}
+.footer-area div ul li a{
+    color:var(--text-color);
+    font-weight: 400;
+}
+.footer-area div ul li a:hover{
+    color:var(--gradient-color);
+    text-decoration: underline;
+}
+.footer-area div ul li a span{
+    padding-right:5px;
+    font-size:16px;
+}
+.socil-icon ul{
+    padding:0;
+    display: flex;
+    align-items: center;
+    gap:5px;
+
+}
+.socil-icon ul li a i{
+    font-size:30px;
+    margin-right:5px;
+
+}
+.footer-area div input{
+    outline: none;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:2px solid var(--text-color);
+    background:transparent;
+    font-size:20px;
+    padding:5px;
+
+}
+.footer-area div button{
+    padding:5px 20px;
+    font-size:20px;
+    border-radius: 5px;
+    background:var(--gradient-color);
+    outline: none;
+    margin-top:5px;
+    cursor: pointer;
+    color:var(--white-color);
 }
