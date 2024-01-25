@@ -6,3 +6,67 @@ body{
     box-sizing: 0;
     font-family: 'Roboto', sans-serif;
 }
+/*Basic style*/
+.container{
+    width:90%;
+    margin:auto;
+}
+h1 , h2 , h3 , h4 ,h5{
+    margin:4px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --text-color:#000000;
+    --header-text-color:#00ffb3;
+    --gradient-color:#b700ff95;
+
+}
+/*Header area style start*/
+#header{
+   position: fixed;
+   top:0;
+   left:0;
+   right: 0;
+    padding:10px 0;
+    border-bottom: 1px solid var(--text-color);
+}
+.nav-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-area>a{
+    font-size: 32px;
+    font-weight: 700; 
+    color:var(--gradient-color)
+
+}
+.nav-area>a>span{
+    color:var(--header-text-color);
+}
+.nav-area ul{
+    display: flex;
+    gap:20px
+}
+.nav-area ul li a{
+    font-size: 20px;
+    font-weight: 600;
+    color:var(--text-color);
+
+}
+.nav-area ul li a:hover{
+    color:var(--gradient-color);
+}
+.icon a{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left:20px;
+    color:var(--text-color)
+
+}
+
