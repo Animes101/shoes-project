@@ -1,0 +1,85 @@
+/*mobile device*/
+
+:root{
+    --text-color:#000000;
+    --header-text-color:#00ffff;
+    --gradient-color:#b700ffd7;
+    --gray-color:#909191;
+    --white-color:#ffffff;
+
+}
+@media screen and (max-width:600px){
+    /*header area responsive*/
+    .nav-area ul{
+        display:none;
+    }
+    /*banner srea responsive*/
+    .banner-area{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-content{
+        width:100%;
+    }
+    .banner-img{
+        width:100%;
+    }
+    .banner-content p{
+        font: size 16px;
+        line-height: 25px;
+    }
+    .banner-content h1{
+        color:var(--gradient-color);
+    }
+   /*Products area responsive*/
+   .products-cards{
+    grid-template-columns: repeat(1 ,1fr);
+    gap:10px;
+
+    }
+     /*About area style responsive*/
+     .about{
+       flex-direction: column;
+        
+    }
+    .about-img{
+        width:100%;
+    
+    
+    }
+    .about-content{
+        width:100%;
+    }
+    .about-content p{
+        font-size: 12px;
+        
+    }
+    /*Customer'sreview area responsive*/
+    .reviews-cards {
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    /*our services area responsive*/
+    .services-cards{
+       flex-direction: column;
+    }
+    .service-card{
+        width:100%;
+    }
+    .service-content{
+        flex-direction: column;
+    
+    }
+    .service-img{
+        width:100%;
+    }
+    .account-area{
+        width:100%;
+    }
+    /*footer area style start*/
+    .footer-area{
+       
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}

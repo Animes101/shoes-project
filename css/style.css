@@ -57,7 +57,7 @@ img{
 
 }
 .nav-area>a>span{
-    color:var(--header-text-color);
+    color:var(--text-color);
 }
 .nav-area ul{
     display: flex;
@@ -87,7 +87,7 @@ img{
 .banner-area{
     display: flex;
     align-items: center;
-    background-image: url('/image/bg1.png');
+    background-image: url('../image/bg1.png');
     background-size: cover;
     background-position: center;
 
@@ -212,7 +212,7 @@ img{
     cursor:pointer;
 }
 
-/*About area style start*/
+ /*About area style start*/
 #about{
     padding:30px 0;
 }
@@ -384,7 +384,7 @@ img{
 .service-content{
     display: flex;
     align-items: center;
-    background-image: url('/image/loging_bg.png');
+    background-image: url('../image/loging_bg.png');
     background-position: center;
     background-size: cover;
 
@@ -411,6 +411,7 @@ img{
     font-weight: 400;
 }
 .account-area form input{
+    box-sizing: border-box;
     display: block;
     padding:5px;
     width:100%;
